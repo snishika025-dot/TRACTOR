@@ -10,7 +10,7 @@ st.title('Tractor Sales: Original vs. Exponential Smoothing')
 
 # Load the combined data
 try:
-    df_combined = pd.read_csv('tractor_sales_smoothed(1).csv', index_col='Month-Year', parse_dates=True)
+    df_combined = pd.read_csv('tractor_sales_smoothed.csv', index_col='Month-Year', parse_dates=True)
 except FileNotFoundError:
     st.error("Error: 'tractor_sales_smoothed.csv' not found. Please ensure the data file is in the same directory as the app.")
     st.stop()
